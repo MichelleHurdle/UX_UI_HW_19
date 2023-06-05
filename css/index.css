@@ -25,6 +25,17 @@ h1 {
     padding-bottom: 20px;
 }
 
+span {
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translate(20px);
+}
+
+span.fade{
+    opacity: 1;
+    transform: translate(0px);
+}
+
 h2 {
     font-family: 'Ibarra Real Nova';
     font-style: normal;
@@ -135,6 +146,7 @@ ul {
     width: 33%;
     padding: 20px;
     padding-top: 20px;
+    box-shadow: #e3e2e2;
 }
 
 #myUxSkills {
