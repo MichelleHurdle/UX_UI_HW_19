@@ -1,0 +1,349 @@
+body {
+    background-color: #f7f1f4d3;
+    color: rgb(230, 211, 211);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin:0%
+    
+}
+
+p {
+    color:rgb(19, 20, 20);
+}
+
+h1 {
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;    
+    line-height: 20px;
+    color: #404040;
+    margin: 0%;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #404040;
+}
+
+h3 {
+    font-family: Lexend;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+    color: #404040;
+}
+
+
+button {
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 1.25px;
+    text-align: left;    
+    background-color: #3645a5;
+    color:aliceblue;
+    border-radius: 50px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 100ms ease-in-out;
+}
+button:hover {
+    background-color: #8E3179;
+  }
+
+header {
+    background-image: linear-gradient(to right, #8E3179, #1E2761);
+}   
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width:80%;
+    padding: 1%;
+}
+
+ul {
+    width: 30%;
+    min-width: 450px;
+    margin-left: auto;
+}
+
+/*.heroImg {
+    height: 400px;
+    padding: 80px;
+    float: right;
+}
+
+.content {
+    max-width: 600px;
+    float: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-inline-end: 10%;
+
+}
+*/
+
+.heroSection {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 5%;
+    padding: 100px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding-right: 40px;
+    max-width: 600px;
+}
+
+.profilePicture {
+    margin: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.flexContainer div {
+    width: 33%;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+#myUxSkills {
+    margin-left: 5%;
+}
+
+.workGrid {
+    display: grid;
+    border: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    column-gap: 5%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'wolfImg wolfBlurb'
+    'nasaImg nasaBlurb'
+    'ocImg ocBlurb'
+    ;
+}
+
+.workGrid p {
+    max-width: 70%;
+}
+
+
+.myWork {
+    display: grid;
+    padding: auto;
+}
+
+.myWork h1 {
+    padding-left: 5%;
+}
+
+#viewAllProjects {
+
+    text-align: center;
+}
+
+
+.workImages {
+    padding: 20px;
+    justify-content:space-around;
+}
+
+#nasaImg img {
+    border-radius: 20px;
+}
+
+
+footer {
+    background-image: linear-gradient(to right, #8E3179, #1E2761);
+    padding: 2%;
+    margin-top: auto;
+    flex-direction: column;
+    min-height: 5vh;
+}
+
+footer ul {
+    display: flex;
+    vertical-align: top;
+}
+
+li {
+    padding-inline: 5%;
+}
+ 
+#wolfImg {
+    grid-area: wolfImg;
+}
+
+#wolfBlurb {
+    grid-area: wolfBlurb;
+    padding-bottom: 40px;
+}
+
+#nasaImg {
+    grid-area: nasaImg;
+}
+
+#nasaBlurb {
+    grid-area: nasaBlurb;
+    padding-bottom: 40px;
+}
+
+#ocImg {
+    grid-area: ocImg;
+}
+
+#ocBlurb {
+    grid-area: ocBlurb;
+    padding-bottom: 40px;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+nav ul a {
+        color:aliceblue;
+    }
+
+    /* Change the color of links on hover */
+nav ul a:hover {
+        color: #f141c8;
+    }
+    
+    /* Add an active class to highlight the current page */
+nav ul a.active {
+        background-color: #04AA6D;
+        color:aliceblue;
+    }
+
+nav ul .icon {
+        display: none;
+      }
+
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+
+.flexContainer {
+        flex-direction: row;
+    }
+
+.flexContainer div {
+        width: 33%;
+    }
+
+h1 {
+        font-size: 40px;
+    }
+.inline-block {
+        width: 400
+    }
+footer ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0%;
+    }
+footer li {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+@media only screen and (max-width: 800px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+        float: right;
+        display: block; 
+    }
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        }
+    .inline-block ul li {
+        display: none;
+    }  
+    p {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    button {
+        font-size: 15px;
+        line-height: 15px;
+        border-radius: 50px;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    }
+    
+  
+@media only screen and (max-width: 1050px) {
+    .workGrid {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'wolfImg'
+        'wolfBlurb'
+        'nasaImg'
+        'nasaBlurb'
+        'ocImg'
+        'ocBlurb'
+        ;
+    }
+
+    .workGrid p {
+        max-width: 100%;
+    }
+
+    .workImages {
+        padding: 0%;
+    }
+
+    .heroSection {
+        padding: 5%;
+    }
+    h1 {
+        font-size: 30px;
+        padding: o;
+    }
+}
+
