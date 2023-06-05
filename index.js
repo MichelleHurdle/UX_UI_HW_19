@@ -7,7 +7,7 @@
 //     }
 //   }
 
-const text = document.querySelector(".greeting");
+const text = document.querySelector('.greeting');
 const strText = text.textContent;
 console.log(strText);
 

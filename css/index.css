@@ -25,6 +25,15 @@ h1 {
     padding-bottom: 20px;
 }
 
+.greeting {
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;    
+    line-height: 20px;
+    color: #404040; 
+}
+
 span {
     opacity: 0;
     transition: all 0.8s ease;
