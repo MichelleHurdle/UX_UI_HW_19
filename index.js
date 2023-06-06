@@ -1,11 +1,11 @@
-// function myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === ".navigation") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "navigation";
-//     }
-//   }
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === ".navigation") {
+      x.className += " responsive";
+    } else {
+      x.className = "navigation";
+    }
+  }
 
 const text = document.querySelector('.greeting');
 const strText = text.textContent;
@@ -25,7 +25,7 @@ function onTick(){
   const span = text.querySelectorAll('span')[char];
   span.classList.add('fade');
   char++
-  if(chae === splitText.length){
+  if(char === splitText.length){
     complete();
     return;
   }
@@ -35,5 +35,20 @@ function complete(){
 
 }
 
+/*pop-up for summary area*/
 
+/*Do I need to download a jQuery library? Which? https://releases.jquery.com/*/
 
+/*https://www.pair.com/support/kb/how-to-use-jquery-to-generate-modal-pop-up-when-clicked/*/
+
+/*keeps the jQuery from executing before document has finished loading*/
+$(document).ready(function){
+
+}
+
+$(".open").on("click", function(){
+  $(".popup, .popup-content").addClass("active");
+  });
+  $(".close, .popup").on("click", function(){
+    $(".popup, .popup-content").removeClass("active");
+    });

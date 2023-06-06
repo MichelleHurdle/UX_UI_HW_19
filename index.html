@@ -8,12 +8,12 @@
     <title>Michelle's portfolio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,500;1,400&family=Lexend:wght@100;200;300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,500;1,400&family=Lexend:wght@100;200;300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="index.js" defer></script>
 </head>
     <body>
-        <script src="index.js"></script>
         <header class="navigation" id="myTopnav">
             <div class="inline-block logo">
                 <img src="Images/Initial Logo.png" alt="Michelle Cheri Logo"/>
@@ -40,7 +40,7 @@
                 </a>
                 </div>
                 <div class="profilePicture">
-                    <img src="Images/My picture.png" width = "400" height = "400" alt="side-profile picture of Michelle with lighthouse"/>
+                    <img src="Images/My picture.png" width = "300" height = "300" alt="side-profile picture of Michelle with lighthouse"/>
                 </div>
             </section>
 
@@ -78,10 +78,10 @@
                                 <p><b>My Role:</b> UX/UI Designer</p>
                                 <p ><b>Duration:</b> 3 weeks</p>
                                 <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                            <button src="Images/Button Nutshell.png">The Nutshell</button>
-                            <button src="Images/Button Detail.png">The Detail</button>
+                            <button src="Images/Button Nutshell.png">Summary</button>
+                            <button src="Images/Button Detail.png">View Case Study</button>
+                    
                     </div>
-
                     <div id="nasaImg" class="workImages">
                         <img src="Images/NASA preview.png" width="442" height="400"/>
                     </div>
@@ -91,8 +91,8 @@
                             <p ><b>My Role:</b> UX/UI Designer</p>
                             <p ><b>Duration:</b> 3 weeks</p>
                             <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                            <button src="Images/Button Nutshell.png">The Nutshell</button>
-                            <button src="Images/Button Detail.png">The Detail</button>
+                            <button src="Images/Button Nutshell.png">Summary</button>
+                            <button src="Images/Button Detail.png">View Case Study</button>
                     </div>
 
                     <div id="ocImg" class="workImages">
@@ -104,8 +104,19 @@
                             <p ><b>My Role:</b> UX/UI Designer</p>
                             <p ><b>Duration:</b> 3 weeks</p>
                             <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                        <button src="Images/Button Nutshell.png">The Nutshell</button>
-                        <button src="Images/Button Detail.png">The Detail</button>
+                        <button src="Images/Button Nutshell.png">Summary</button>
+                        <button src="Images/Button Detail.png">View Case Study</button>
+                                <!--Creates the popup body-->
+                                <div class="popup-overlay">
+                                    <!--Creates the popup content-->
+                                    <div class="popup-content">
+                                        <h2>Pop-Up</h2>
+                                        <p> This is an example pop-up that you can make using jQuery.</p>
+                                    <!--popup's close button-->
+                                        <button class="close">Close</button>    
+                                    </div>
+                                    </div>
+                                    <button class="open">Open</button>
                     </div>
 
                 </div>
@@ -119,5 +130,8 @@
                     <li class="inline-block">Contact</li>
                 </ul>
             </footer>
+            <script>src="https://code.jquery.com/jquery-3.2.1.js"
+                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                crossorigin="anonymous"</script>
     </body>
 </html>
