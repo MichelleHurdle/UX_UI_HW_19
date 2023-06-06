@@ -1,3 +1,27 @@
+/*pop-up jQuery area*/
+
+$(".openWolfOverlay").on("click", function(){
+  $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
+  });
+  $(".close-wolf, .popup-wolf").on("click", function(){
+    $(".popup-overlay-wolf, .popup-content-wolf").removeClass("active");
+    });
+
+$(".openNasaOverlay").on("click", function(){
+  $(".popup-overlay-nasa, .popup-content-nasa").addClass("active");
+  });
+  $(".close-nasa, .popup-nasa").on("click", function(){
+    $(".popup-overlay-nasa, .popup-content-nasa").removeClass("active");
+    });
+
+$(".openOcOverlay").on("click", function(){
+  $(".popup-overlay-oc, .popup-content-oc").addClass("active");
+  });
+  $(".close-oc, .popup-oc").on("click", function(){
+    $(".popup-oc, .popup-content-oc").removeClass("active");
+    });
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === ".navigation") {
@@ -5,7 +29,7 @@ function myFunction() {
     } else {
       x.className = "navigation";
     }
-  }
+  };
 
 const text = document.querySelector('.greeting');
 const strText = text.textContent;
@@ -16,9 +40,9 @@ text.textContent = "";
 
 for(let i=0; i < splitText.length; i++) {
   text.innerHTML += "<span>"+ splitText[i] + "</span>";
-}
+};
 
-let char = 0
+let char = 0;
 let timer = setInterval(onTick, 50);
 
 function onTick(){
@@ -29,26 +53,9 @@ function onTick(){
     complete();
     return;
   }
-}
+};
 
 function complete(){
-
-}
-
-/*pop-up for summary area*/
-
-/*Do I need to download a jQuery library? Which? https://releases.jquery.com/*/
-
-/*https://www.pair.com/support/kb/how-to-use-jquery-to-generate-modal-pop-up-when-clicked/*/
-
-/*keeps the jQuery from executing before document has finished loading*/
-$(document).ready(function){
-
-}
-
-$(".open").on("click", function(){
-  $(".popup, .popup-content").addClass("active");
-  });
-  $(".close, .popup").on("click", function(){
-    $(".popup, .popup-content").removeClass("active");
-    });
+ clearInterval(timer);
+ timer = null;
+};

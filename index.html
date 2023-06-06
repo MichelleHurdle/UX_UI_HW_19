@@ -11,7 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,500;1,400&family=Lexend:wght@100;200;300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
 </head>
     <body>
         <header class="navigation" id="myTopnav">
@@ -34,7 +39,7 @@
             <section class="heroSection">
                 <div class="content">
                     <h1 class="greeting">Hello! I'm Michelle.</h1>
-                    <p>I'm a UX/UI designer from the Midwest, who has over 16 years experience working with poeple in the healthcare setting.  I have a passion for life-long learning, and a love for roadside attractions ;D.  I believe that design should be equitable, accessible, beautiful and intuitive.</p>
+                    <p>I'm a UX/UI designer and chronic over-achiever from the Midwest. I have a <b>passion</b> for life-long learning and a <b>love</b> for roadside attractions ;D.  I believe that design must be equitable, accessible, beautiful, intuitive and human-centered.</p>
                     <a href="https://drive.google.com/file/d/1R6sTHeU1Sh6BALFU4xYQOicJ8bM9-zlC/view?usp=sharing">
                     <button>Resume</button>
                 </a>
@@ -42,85 +47,120 @@
                 <div class="profilePicture">
                     <img src="Images/My picture.png" width = "300" height = "300" alt="side-profile picture of Michelle with lighthouse"/>
                 </div>
-            </section>
-
-                         <!--  My UX Skills section coded using CSS flex -->
+                            <!--  My UX Skills section coded using CSS flex -->
             <section class="mySkills">
-                <h1 id="myUxSkills">My UX Skills</h1>
+                <h1 id="myuxSkills">-I've Got Skills-</h1>
                 <div class="flexContainer">
-                   <div>
-                        <img src="Images/Research Icon.svg"/>
-                        <h3>User Research</h3>
-                        <p>Competitive Analysis, User Interviews, Surveys, Personas, Affinity & Empathy Mapping, Card Sorting, Detailed User Flows, Information Architecture</p>
-                    </div>
                     <div>
-                        <img src="Images/UI Icon.svg"/>
-                        <h3>UI Design</h3>
-                        <p>Heuristics Evaluations, UI Style Guides, UI Design Systems, & Wireframe Sketching</p>
+                    <img id="researchIcon" src="Images/Research Icon.svg"height="80"/>
+                    <h3>User Research</h3>
+                    <ul class="userReaserachSkill">
+                        <li>Competitive Analysis</li> 
+                        <li>User Interviews</li> 
+                        <li>Surveys</li>
+                        <li>User Personas</li>
+                        <li>Affinity & Empathy Mapping</li>
+                        <li>Card Sorting Technique</li>
+                        <li>User Flows</li>
+                        <li>Information Architecture</li>
+                    </ul>
                     </div>
-                    <div>
-                        <img src="Images/Web Develop Icon.svg"/>
-                        <h3>Web Development</h3>
-                        <p>Wireframing, Mockups, Prototyping, Interaction Design, Usability Testing, A/B Testing, & Iteration </p>
-                    </div>
+                <div>
+                    <img id="uiIcon" src="Images/UI Icon.svg" height="80"/>
+                    <h3>UI Design</h3>
+                    <ul class="uiDesignSkill">
+                        <li>UI Heuristic Evaluations</li> 
+                        <li>UI Style Guides</li> 
+                        <li>UI Design Systems</li>
+                        <li>wireframe sketching</li>
+                    </ul>
                 </div>
+                <div>
+                    <img id="webDevIcon" src="Images/Web Develop Icon.svg" height="80"/>
+                    <h3>Web Development</h3>
+                    <ul class="webDevelopSkill">
+                        <li>Wireframing</li> 
+                        <li>Mockups</li> 
+                        <li>Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Usability Testing</li>
+                        <li>A/B Testing</li>
+                        <li>Design Iteration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
             </section>
-             <!--  My UX Skills section coded using CSS Grid -->
-            <section class="myWork">
-                <h1>My Work</h1>
-                <div class="workGrid">
-                    <div id="wolfImg" class="workImages">
-                        <img src="Images/Wolf preview.png" width="442" height="400"/>
-                    </div>
-                    <div id="wolfBlurb">
-                        <h3>Wolf Creek Habitat & Rescue</h3>
-                        <p>This non-profit website and app redesign was initiated to improve site aesthetics, decrease information overload, and create a commonsense navigation.</p>
-                                <p><b>My Role:</b> UX/UI Designer</p>
-                                <p ><b>Duration:</b> 3 weeks</p>
-                                <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                            <button src="Images/Button Nutshell.png">Summary</button>
-                            <button src="Images/Button Detail.png">View Case Study</button>
-                    
-                    </div>
-                    <div id="nasaImg" class="workImages">
-                        <img src="Images/NASA preview.png" width="442" height="400"/>
-                    </div>
-                    <div id="nasaBlurb">
-                        <h3>NASA Website Redesign.</h3>
-                        <p>This government redesign focused on re-thinking the navigation hierarchy, redesigning both the Homepage and the astronomy pic of the day pages, as well as implementing an updated UI Style Guide.
-                            <p ><b>My Role:</b> UX/UI Designer</p>
-                            <p ><b>Duration:</b> 3 weeks</p>
-                            <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                            <button src="Images/Button Nutshell.png">Summary</button>
-                            <button src="Images/Button Detail.png">View Case Study</button>
-                    </div>
-
-                    <div id="ocImg" class="workImages">
-                        <img src="Images/OpenCloset Mockup Image.svg" width="442" height="400"/>
-                    </div>
-                    <div id="ocBlurb" >
-                        <h3>Open Closet</h3>
-                        <p>This app was created and design from the ground up to make it easy for friends, family, and neighbors to expand their closets by swapping and borrowing clothing. </p>
-                            <p ><b>My Role:</b> UX/UI Designer</p>
-                            <p ><b>Duration:</b> 3 weeks</p>
-                            <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                        <button src="Images/Button Nutshell.png">Summary</button>
-                        <button src="Images/Button Detail.png">View Case Study</button>
-                                <!--Creates the popup body-->
-                                <div class="popup-overlay">
-                                    <!--Creates the popup content-->
-                                    <div class="popup-content">
-                                        <h2>Pop-Up</h2>
-                                        <p> This is an example pop-up that you can make using jQuery.</p>
-                                    <!--popup's close button-->
-                                        <button class="close">Close</button>    
-                                    </div>
-                                    </div>
-                                    <button class="open">Open</button>
-                    </div>
-
+            <!--  My UX Skills section coded using CSS Grid -->
+        <section class="myWork">
+            <h1 id="myworkText">-Projects-</h1>
+            <div class="workGrid">
+                <div id="wolfImg" class="workImages">
+                    <img src="Images/Wolf preview.png" width="342" height="300"/>
                 </div>
-                <h3 id="viewAllProjects">View all Projects</h3>
+                <div id="wolfBlurb">
+                    <h3>Wolf Creek Habitat & Rescue</h3>
+                    <p>This non-profit website and app redesign was initiated to improve site aesthetics, decrease information overload, and create a commonsense navigation.</p>
+                            <p><b>My Role:</b> UX/UI Designer</p>
+                            <p ><b>Duration:</b> 3 weeks</p>
+                            <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
+                    <button class="openWolfOverlay" src="Images/Button Nutshell.png">Summary</button>
+                    <button src="Images/Button Detail.png">View Case Study</button>
+                    <div class="popup-overlay-wolf">
+                        <!--Creates the popup content-->
+                        <div class="popup-content-wolf">
+                            <h3>Non-Profit Website Redesign</h3>
+                            <p> This project aimed to address stakeholder concerns regarding visitor compliance with the rules and regulations that visitors were required to read and comply with prior to visiting the non-profit facility.  We started from square one with this one, generating a complete business website rebranding based on user research.</p>
+                        <!--popup's close button-->
+                            <button class="close-wolf">Close</button>    
+                        </div>
+                    </div>
+                
+                </div>
+                <div id="nasaImg" class="workImages">
+                    <img src="Images/NASA preview.png" width="342" height="300"/>
+                </div>
+                <div id="nasaBlurb">
+                    <h3>NASA Website Redesign.</h3>
+                    <p>This government redesign focused on re-thinking the navigation hierarchy, redesigning both the Homepage and the astronomy pic of the day pages, as well as implementing an updated UI Style Guide.
+                        <p ><b>My Role:</b> UX/UI Designer</p>
+                        <p ><b>Duration:</b> 3 weeks</p>
+                        <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
+                    <button class="openNasaOverlay" src="Images/Button Nutshell.png">Summary</button>
+                    <button src="Images/Button Detail.png">View Case Study</button>
+                    <div class="popup-overlay-nasa">
+                        <!--Creates the popup content-->
+                        <div class="popup-content-nasa">
+                            <h3>Government Agency Redesign</h3>
+                            <p> This redesign focused on creating a new primary and secondary navigation and updating the user interface of both the Homepage and the Image of the Day page.</p>
+                        <!--popup's close button-->
+                            <button class="close-nasa">Close</button>    
+                        </div>
+                        </div>
+                </div>
+                <div id="ocImg" class="workImages">
+                    <img src="Images/OpenCloset Mockup Image.svg" width="342" height="300"/>
+                </div>
+                <div id="ocBlurb" >
+                    <h3>Open Closet</h3>
+                    <p>This app was created and design from the ground up to make it easy for friends, family, and neighbors to expand their closets by swapping and borrowing clothing. </p>
+                        <p ><b>My Role:</b> UX/UI Designer</p>
+                        <p ><b>Duration:</b> 3 weeks</p>
+                        <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
+                <button class="openOcOverlay" src="Images/Button Nutshell.png">Summary</button>
+                <button src="Images/Button Detail.png">View Case Study</button>
+                        <!--Creates the popup body-->
+                        <div class="popup-overlay-oc">
+                            <!--Creates the popup content-->
+                            <div class="popup-content-oc">
+                                <h3>OpenCloset App</h3>
+                                <p> This app was created from the ground up by a team of four UX/UI students.  Our idea for this app aimed to solve the issue of clothing and environmental waste due to fast fashion.  The goal was to create an app for those wishing to expand their closets via swapping and/or borrowing from closets of those within their close network of friends, family, and those within a close radius of the user.</p>
+                            <!--popup's close button-->
+                                <button class="close-oc">Close</button>    
+                            </div>
+                            </div>
+                    </div>
+                </div>
             </section>
             <footer>
                 <ul>
@@ -130,8 +170,7 @@
                     <li class="inline-block">Contact</li>
                 </ul>
             </footer>
-            <script>src="https://code.jquery.com/jquery-3.2.1.js"
-                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-                crossorigin="anonymous"</script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>;
+            <script src="index.js"></script>;
     </body>
 </html>

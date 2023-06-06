@@ -26,12 +26,11 @@ h1 {
 }
 
 .greeting {
-    font-family: 'Ibarra Real Nova';
+    font-family: 'Splash', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;    
+    font-size: 70px;    
     line-height: 20px;
-    color: #404040; 
 }
 
 span {
@@ -39,22 +38,22 @@ span {
     transition: all 0.4s ease;
 }
 
-span.fade{
+span.fade {
     opacity: 1;
     color: #8E3179;
 }
 
 h2 {
-    font-family: 'Ibarra Real Nova';
+    font-family: 'Splash', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 40px;
     color: #404040;
 }
 
 h3 {
     font-family: Lexend;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 1.25px;
@@ -141,31 +140,58 @@ ul {
 .profilePicture {
     margin: 20px;
 }
-
+#myuxSkills {    
+    font-family: 'Splash', cursive;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-size: 80px;
+    color: #1E2761;
+    text-align: center;
+}
 .flexContainer {
     display: flex;
-    padding: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    column-gap: 20px;
 }
-
 .flexContainer div {
-    width: 33%;
+    /* width: 33%; */
+    width: 350px;
+    box-sizing: border-box;
+    border-style:outset;
+    border-radius: 25px;
     padding: 20px;
-    padding-top: 20px;
-    box-shadow: #e3e2e2;
+    border-color: #f5d4ed2e;
 }
-
-#myUxSkills {
-    margin-left: 5%;
+#researchIcon {
+    padding-left: 100px;
 }
-
+#uiIcon {
+    padding-left: 100px;
+}
+#webDevIcon {
+    padding-left: 100px;
+}
+#myworkText {
+    font-family: 'Splash', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #1E2761;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
 .workGrid {
     display: grid;
-    border: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    column-gap: 5%;
+    /* border: 20px; */
+    margin-left: 150px;
+    margin-right: 150px;
+    column-gap: 60px;
     grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -174,37 +200,34 @@ ul {
     'ocImg ocBlurb'
     ;
 }
-
+/* .workGrid div {
+    box-sizing: border-box;
+    border-style:outset;
+    border-radius: 25px;
+    padding: 20px;
+    border-color: #f5d4ed2e;
+} */
 .workGrid p {
-    max-width: 70%;
+    max-width: 100%;
 }
-
-
 .myWork {
     display: grid;
     padding: auto;
 }
-
-.myWork h1 {
-    padding-left: 5%;
-}
-
+/* .myWork h1 {
+    margin-left: 150px;
+    color: #1E2761;
+} */
 #viewAllProjects {
 
     text-align: center;
 }
-
-
 .workImages {
     padding: 20px;
-    justify-content:space-around;
 }
-
 #nasaImg img {
     border-radius: 20px;
 }
-
-
 footer {
     background-image: linear-gradient(to right, #8E3179, #1E2761);
     padding: 2%;
@@ -212,80 +235,73 @@ footer {
     flex-direction: column;
     min-height: 5vh;
 }
-
 footer ul {
     display: flex;
     vertical-align: top;
 }
-
 li {
     padding-inline: 5%;
 }
  
 #wolfImg {
     grid-area: wolfImg;
+    padding-left: 0;
 }
-
 #wolfBlurb {
     grid-area: wolfBlurb;
     padding-bottom: 40px;
 }
-
 #nasaImg {
     grid-area: nasaImg;
+    padding-left: 0;
 }
-
 #nasaBlurb {
     grid-area: nasaBlurb;
     padding-bottom: 40px;
 }
-
 #ocImg {
     grid-area: ocImg;
+    padding-left: 0;
 }
-
 #ocBlurb {
     grid-area: ocBlurb;
     padding-bottom: 40px;
 }
-
+/* .popup-overlay-oc{
+    box-sizing: border-box;
+    border-style:outset;
+    border-radius: 25px;
+    padding: 20px;
+    border-color: #f5d4ed2e;
+} */
 .navigation {
     overflow: hidden;
 }
-
 nav ul a {
         color:aliceblue;
     }
-
     /* Change the color of links on hover */
 nav ul a:hover {
-        color: #f141c8;
-    }
-    
+        color: #e328b7;
+    }   
     /* Add an active class to highlight the current page */
 nav ul a.active {
         background-color: #04AA6D;
         color:aliceblue;
     }
-
 nav ul .icon {
         display: none;
       }
-
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-
-
-.flexContainer {
-        flex-direction: row;
-    }
-
-.flexContainer div {
-        width: 33%;
-    }
-
-h1 {
-        font-size: 40px;
-    }
+ /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+.userReaserachSkill {
+    color: #1E2761;
+}
+.uiDesignSkill {
+    color: #1E2761;
+}
+.webDevelopSkill {
+    color: #1E2761;
+}
 .inline-block {
         width: 400
     }
@@ -298,7 +314,7 @@ footer li {
         padding-top: 3px;
         padding-bottom: 3px;
     }
-
+/* Media Query Section */
 @media only screen and (max-width: 800px) {
     .navigation a:not(:first-child) {display: none;}
     .navigation a.icon {
@@ -320,10 +336,14 @@ footer li {
         display: none;
     }  
     p {
-        font-size: 15px;
+        font-size: 18px;
     }
     h3 {
-        font-size: 25px;
+        font-size: 23px;
+    }
+    .greeting {
+        font-size: 40px;
+        padding-top: 5%;
     }
     button {
         font-size: 15px;
@@ -333,8 +353,39 @@ footer li {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .flexContainer {
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-right: 40px;
     }
-    
+    .flexContainer div {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #myuxSkills {    
+        font-size: 45px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #myworkText {
+        font-size: 45px;
+    }
+    .workGrid {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .content {
+        padding: 0%;
+    }
+    footer ul {
+        margin: 0%;
+    }
+    ul {
+        width: 30%;
+        min-width: 300px;
+    }
+}
   
 @media only screen and (max-width: 1050px) {
     .workGrid {
@@ -365,19 +416,46 @@ footer li {
         padding: o;
     }
 }
-
-.popup-overlay {
-  visibility:hidden;
-  }
-  
-.popup-content {
-visibility:hidden;
-}
-
-.popup-overlay.active{
-  visibility:visible;
-  }
-  
-  .popup-content.active {
-  visibility:visible;
-  }
+/* jQuery Popup Section */
+/* wolf overlay */
+.popup-overlay-wolf {
+    visibility:hidden;
+    }
+.popup-content-wolf {
+    display: none;
+    /* visibility:hidden; */
+    }
+.popup-overlay-wolf.active{
+    visibility:visible;
+    }
+.popup-conten-wolf.active {
+    visibility:visible;
+    }
+/* nasa overlay */
+.popup-overlay-nasa {
+    display: none;
+    /* visibility:hidden; */
+    }  
+.popup-content-nasa {
+    display: none;
+    /* visibility:hidden; */
+    }
+.popup-overlay-nasa.active{
+    visibility:visible;
+    }
+.popup-content-nasa.active {
+    visibility:visible;
+    }
+/* oc overlay */
+.popup-overlay-oc {
+    visibility:hidden;
+    }
+.popup-content-oc {
+    visibility:hidden;
+    }
+.popup-overlay-oc.active{
+    visibility:visible;
+    }
+.popup-content-oc.active {
+    visibility:visible;
+    }
