@@ -140,6 +140,13 @@ ul {
 .profilePicture {
     margin: 20px;
 }
+#arrowIcon {
+    transform: rotate(110deg);
+    align-items: center;
+    max-height: 100px;
+    margin-left: 40%;
+    opacity: .8;
+}
 #myuxSkills {    
     font-family: 'Splash', cursive;
     font-style: normal;
@@ -175,6 +182,12 @@ ul {
 }
 #webDevIcon {
     padding-left: 100px;
+}
+#arrowIconProjects {
+    transform: rotate(180deg);
+    align-items: center;
+    max-height: 100px;
+    margin-left: 60%;
 }
 #myworkText {
     font-family: 'Splash', cursive;
@@ -422,7 +435,7 @@ footer li {
     visibility:hidden;
     }
 .popup-content-wolf {
-    display: none;
+    visibility:hidden;
     /* visibility:hidden; */
     }
 .popup-overlay-wolf.active{
@@ -433,11 +446,11 @@ footer li {
     }
 /* nasa overlay */
 .popup-overlay-nasa {
-    display: none;
+    visibility:hidden;
     /* visibility:hidden; */
     }  
 .popup-content-nasa {
-    display: none;
+    visibility:hidden;
     /* visibility:hidden; */
     }
 .popup-overlay-nasa.active{
