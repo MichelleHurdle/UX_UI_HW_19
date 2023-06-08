@@ -17,6 +17,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+<script src="index2.js"></script>
+<!-- <script>
+    $(document).ready(function(){
+        $(".open").click(function(){
+            $(".popupOverlay, .popupContent").addClass("active");
+        });
+        $(".close, .popupOverlay").click(function(){
+            $(".popupOverlay, .popupContent").removeClass("active");
+        });
+    });
+</script> -->
 </head>
     <body>
         <header class="navigation" id="myTopnav">
@@ -38,7 +49,7 @@
             <section class="heroSection">
                 <div class="content">
                     <h1 class="greeting">Hello! I'm Michelle.</h1>
-                    <p>I'm a UX/UI designer and chronic over-achiever from the Midwest. I have a <b>passion</b> for life-long learning and a <b>love</b> for roadside attractions ;D.  I believe that design must be equitable, accessible, beautiful, intuitive and human-centered.</p>
+                    <p>I'm a UX/UI designer and chronic over-achiever from the Midwest. I have a <b>passion</b> for life-long learning and a <b>love</b> for roadside attractions ;D.  I believe that design must be equitable, accessible, beautiful, intuitive and <b>HUMAN-centered.</b></p>
                     <a href="https://drive.google.com/file/d/1R6sTHeU1Sh6BALFU4xYQOicJ8bM9-zlC/view?usp=sharing">
                     <button>Resume</button>
                 </a>
@@ -59,7 +70,7 @@
                         <li>User Interviews</li> 
                         <li>Surveys</li>
                         <li>User Personas</li>
-                        <li>Affinity & Empathy Mapping</li>
+                        <li>Affinity Mapping</li>
                         <li>Card Sorting Technique</li>
                         <li>User Flows</li>
                         <li>Information Architecture</li>
@@ -105,16 +116,16 @@
                             <p><b>My Role:</b> UX/UI Designer</p>
                             <p ><b>Duration:</b> 3 weeks</p>
                             <p ><b>Tools:</b> Figma, Miro, Trello, Canva</p>
-                    <button class="openWolfOverlay" src="Images/Button Nutshell.png">Summary</button>
+                    <!-- <button class="openWolfOverlay" src="Images/Button Nutshell.png">Summary</button> -->
                     <button src="Images/Button Detail.png">View Case Study</button>
-                    <div class="popup-overlay-wolf">
+                    <!-- <div class="popup-overlay-wolf"> -->
                         <!--Creates the popup content-->
-                        <div class="popup-content-wolf">
-                            <h3>Non-Profit Website Redesign</h3>
-                            <p> This project aimed to address stakeholder concerns regarding visitor compliance with the rules and regulations that visitors were required to read and comply with prior to visiting the non-profit facility.  We started from square one with this one, generating a complete business website rebranding based on user research.</p>
+                        <!-- <div class="popup-content-wolf"> -->
+                            <!-- <h3>Non-Profit Website Redesign</h3> -->
+                            <!-- <p> This project aimed to address stakeholder concerns regarding visitor compliance with the rules and regulations that visitors were required to read and comply with prior to visiting the non-profit facility.  We started from square one with this one, generating a complete business website rebranding based on user research.</p> -->
                         <!--popup's close button-->
-                            <button class="close-wolf">Close</button>    
-                        </div>
+                            <!-- <button class="close-wolf">Close</button>    
+                        </div> -->
                     </div>
                 
                 </div>
@@ -162,6 +173,18 @@
                             </div>
                     </div>
                 </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Non-Profit Website Redesign</h2>
+                        <p>This project aimed to address stakeholder concerns regarding visitor compliance with the rules and regulations that visitors were required to read and comply with prior to visiting the non-profit facility.  We started from square one with this one, generating a complete business website rebranding based on user research.</p>
+                        <a href="#" class="btn close">I'm done, close away</a>
+                    </div>
+                </div>
+                <main>
+                    <h1>here's regular page content</h1>
+                    <p> build out the page as you normally would</p>
+                    <a href="#" class="btn open">Check it Out!</a>
+                </main>
             </section>
             <footer>
                 <ul>
@@ -172,6 +195,6 @@
                 </ul>
             </footer>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>;
-            <script src="index.js"></script>;
+            <script src="index2.js"></script>;
     </body>
 </html>

@@ -1,11 +1,15 @@
 /*pop-up jQuery area*/
 
-$(".openWolfOverlay").on("click", function(){
-  $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
-  });
-  $(".close-wolf, .popup-wolf").on("click", function(){
-    $(".popup-overlay-wolf, .popup-content-wolf").removeClass("active");
-    });
+// $(".openWolfOverlay").on("click", function(){
+//   $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
+//   });
+//   $(".close-wolf, .popup-wolf").on("click", function(){
+//     $(".popup-overlay-wolf, .popup-content-wolf").removeClass("active");
+//     });
+
+
+
+
 
 $(".openNasaOverlay").on("click", function(){
   $(".popup-overlay-nasa, .popup-content-nasa").addClass("active");

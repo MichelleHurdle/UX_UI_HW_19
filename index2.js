@@ -1,4 +1,15 @@
 
+$(document).ready(function(){
+  $(".open").click(function(){
+      $(".popupOverlay, .popupContent").addClass("active");
+  });
+  $(".close, .popupOverlay").click(function(){
+      $(".popupOverlay, .popupContent").removeClass("active");
+  });
+});
+  
+  
+  
   function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === ".navigation") {
