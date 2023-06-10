@@ -9,7 +9,15 @@ body {
     margin:0%
     
 }
-
+#navPagesTop{
+    font-family: 'Lexend Zetta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px;
+    padding-left: 40px;
+}
 p {
     color:rgb(19, 20, 20);
 }
@@ -102,28 +110,11 @@ nav {
     padding: 1%;
 }
 
-ul {
-    width: 30%;
-    min-width: 450px;
-    margin-left: auto;
+header ul {
+    /* width: 20%; */
+    min-width: 800px;
+    margin-left: 50%;
 }
-
-/*.heroImg {
-    height: 400px;
-    padding: 80px;
-    float: right;
-}
-
-.content {
-    max-width: 600px;
-    float: left;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-inline-end: 10%;
-
-}
-*/
-
 .heroSection {
     display: flex;
     flex-wrap: wrap;
@@ -133,13 +124,11 @@ ul {
     justify-content: center;
     align-items: center;
 }
-
 .content {
     padding-right: 40px;
     max-width: 600px;
     line-height: 40px;
 }
-
 .profilePicture {
     margin: 20px;
 }
@@ -208,24 +197,17 @@ ul {
 .workGrid {
     display: grid;
     /* border: 20px; */
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 175px;
+    margin-right: 175px;
     column-gap: 60px;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas: 
     'wolfImg wolfBlurb'
     'nasaImg nasaBlurb'
     'ocImg ocBlurb'
     ;
 }
-/* .workGrid div {
-    box-sizing: border-box;
-    border-style:outset;
-    border-radius: 25px;
-    padding: 20px;
-    border-color: #f5d4ed2e;
-} */
 .workGrid p {
     max-width: 100%;
 }
@@ -247,19 +229,9 @@ ul {
 #nasaImg img {
     border-radius: 20px;
 }
-footer {
-    background-image: linear-gradient(to right, #8E3179, #1E2761);
-    padding: 2%;
-    margin-top: auto;
-    flex-direction: column;
-    min-height: 5vh;
-}
-footer ul {
-    display: flex;
-    vertical-align: top;
-}
 li {
     padding-inline: 5%;
+    padding-left: 20px;
 }
 main {
     padding: 2rem;
@@ -305,7 +277,15 @@ a.btn:hover {
 }
 .popup-overlay-wolf {
     display: none;
-    background-color: #ecfdf7;
+    background-color: #fdfdfd;
+}
+.popup-overlay-nasa {
+    display: none;
+    background-color: #fdfdfd;
+}
+.popup-overlay-oc {
+    display: none;
+    background-color: #fdfdfd;
 }
 #wolfImg {
     grid-area: wolfImg;
@@ -331,15 +311,29 @@ a.btn:hover {
     grid-area: ocBlurb;
     padding-bottom: 40px;
 }
-/* .popup-overlay-oc{
+.popup-overlay-wolf{
+    border-color: #f5d4ed2e;
     box-sizing: border-box;
-    border-style:outset;
     border-radius: 25px;
     padding: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.popup-overlay-nasa{
     border-color: #f5d4ed2e;
-} */
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.popup-overlay-oc{
+    border-color: #f5d4ed2e;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
 .navigation {
-    overflow: hidden;
+    overflow: visible;
 }
 nav ul a {
         color:aliceblue;
@@ -366,18 +360,27 @@ nav ul .icon {
 .webDevelopSkill {
     color: #1E2761;
 }
-.inline-block {
-        width: 400
-    }
+/* .inline-block {
+        width: 400px;
+    } */
 footer ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0%;
-    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+    vertical-align: top;
+}
 footer li {
-        padding-top: 3px;
-        padding-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     }
+footer {
+    background-image: linear-gradient(to right, #bd0e88, #1E2761);
+    padding: 2%;
+    margin-top: auto;
+    flex-direction: row;
+    min-height: 5vh;
+}
 /* Media Query Section */
 @media only screen and (max-width: 800px) {
     .navigation a:not(:first-child) {display: none;}
@@ -424,6 +427,7 @@ footer li {
     }
     .flexContainer div {
         width: 100%;
+        margin: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -480,46 +484,3 @@ footer li {
         padding: o;
     }
 }
-/* jQuery Popup Section */
-/* wolf overlay */
-/* .popup-overlay-wolf {
-    visibility:hidden;
-    }
-.popup-content-wolf {
-    visibility:hidden;
-    /* visibility:hidden; */
-    /* }
-.popup-overlay-wolf.active{
-    visibility:visible;
-    }
-.popup-conten-wolf.active {
-    visibility:visible;
-    /* } 
-/* nasa overlay */
-.popup-overlay-nasa {
-    visibility:hidden;
-    /* visibility:hidden; */
-    }  
-.popup-content-nasa {
-    visibility:hidden;
-    /* visibility:hidden; */
-    }
-.popup-overlay-nasa.active{
-    visibility:visible;
-    }
-.popup-content-nasa.active {
-    visibility:visible;
-    }
-/* oc overlay */
-.popup-overlay-oc {
-    visibility:hidden;
-    }
-.popup-content-oc {
-    visibility:hidden;
-    }
-.popup-overlay-oc.active{
-    visibility:visible;
-    }
-.popup-content-oc.active {
-    visibility:visible;
-    }

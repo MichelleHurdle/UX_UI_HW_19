@@ -1,34 +1,31 @@
 /*pop-up jQuery area*/
-
-// $(".openWolfOverlay").on("click", function(){
-//   $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
-//   });
-//   $(".close-wolf, .popup-wolf").on("click", function(){
-//     $(".popup-overlay-wolf, .popup-content-wolf").removeClass("active");
-//     });
-
+/* wolf overlay */
 $(".openWolfOverlay").on("click", function(){
   $(".popup-overlay-wolf").toggle();
   console.log("wolf-overlay-pressed");
-  // $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
-
-  });                                                                                                                                                                            /* jQuery Popup Section */
-/* wolf overlay */
-
+  });   
+$(".close-wolf").on("click", function(){
+  $(".popup-overlay-wolf").toggle();
+  console.log("wolf-overlay-closed");
+  });
+  /* nasa overlay */
 $(".openNasaOverlay").on("click", function(){
-  $(".popup-overlay-nasa, .popup-content-nasa").addClass("active");
+  $(".popup-overlay-nasa").toggle();
+  console.log("nasa-overlay-pressed");
+  });   
+$(".close-nasa").on("click", function(){
+  $(".popup-overlay-nasa").toggle();
+  console.log("nasa-overlay-closed");
   });
-  $(".close-nasa, .popup-nasa").on("click", function(){
-    $(".popup-overlay-nasa, .popup-content-nasa").removeClass("active");
-    });
-
+/* oc overlay */
 $(".openOcOverlay").on("click", function(){
-  $(".popup-overlay-oc, .popup-content-oc").addClass("active");
+  $(".popup-overlay-oc").toggle();
+  console.log("oc-overlay-pressed");
+  });   
+$(".close-oc").on("click", function(){
+  $(".popup-overlay-oc").toggle();
+  console.log("oc-overlay-closed");
   });
-  $(".close-oc, .popup-oc").on("click", function(){
-    $(".popup-oc, .popup-content-oc").removeClass("active");
-    });
-
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
