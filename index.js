@@ -7,9 +7,13 @@
 //     $(".popup-overlay-wolf, .popup-content-wolf").removeClass("active");
 //     });
 
+$(".openWolfOverlay").on("click", function(){
+  $(".popup-overlay-wolf").toggle();
+  console.log("wolf-overlay-pressed");
+  // $(".popup-overlay-wolf, .popup-content-wolf").addClass("active");
 
-
-
+  });                                                                                                                                                                            /* jQuery Popup Section */
+/* wolf overlay */
 
 $(".openNasaOverlay").on("click", function(){
   $(".popup-overlay-nasa, .popup-content-nasa").addClass("active");

@@ -303,6 +303,10 @@ a.btn:hover {
 .popupOverlay.active, .popupContent.active {
     visibility: visible;
 }
+.popup-overlay-wolf {
+    display: none;
+    background-color: #ecfdf7;
+}
 #wolfImg {
     grid-area: wolfImg;
     padding-left: 0;
@@ -478,19 +482,19 @@ footer li {
 }
 /* jQuery Popup Section */
 /* wolf overlay */
-.popup-overlay-wolf {
+/* .popup-overlay-wolf {
     visibility:hidden;
     }
 .popup-content-wolf {
     visibility:hidden;
     /* visibility:hidden; */
-    }
+    /* }
 .popup-overlay-wolf.active{
     visibility:visible;
     }
 .popup-conten-wolf.active {
     visibility:visible;
-    }
+    /* } 
 /* nasa overlay */
 .popup-overlay-nasa {
     visibility:hidden;
