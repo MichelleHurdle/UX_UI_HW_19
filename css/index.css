@@ -113,7 +113,9 @@ nav {
 header ul {
     /* width: 20%; */
     min-width: 800px;
-    margin-left: 50%;
+    /* margin-left: 50%; */
+    display: flex;
+    justify-content: right;
 }
 .heroSection {
     display: flex;
@@ -336,19 +338,19 @@ a.btn:hover {
 .navigation {
     overflow: visible;
 }
-nav ul a {
+nav a {
         color:aliceblue;
     }
     /* Change the color of links on hover */
-nav ul a:hover {
+nav a:hover {
         color: #e328b7;
     }   
     /* Add an active class to highlight the current page */
-nav ul a.active {
+nav a.active {
         background-color: #04AA6D;
         color:aliceblue;
     }
-nav ul .icon {
+a .icon {
         display: none;
       }
  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -367,9 +369,16 @@ nav ul .icon {
 footer ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: right;
     padding: 0%;
     vertical-align: top;
+    font-family: 'Lexend Zetta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 10px;
+    padding-left: 40px;
 }
 footer li {
     padding-top: 3px;
@@ -421,17 +430,6 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .flexContainer {
-        flex-wrap: wrap;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .flexContainer div {
-        width: 100%;
-        margin: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
     #myuxSkills {    
         font-size: 45px;
         margin-left: 50px;
@@ -456,7 +454,7 @@ footer {
     }
 }
   
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
     .workGrid {
         grid-template-columns: auto;
         grid-template-areas: 
@@ -468,7 +466,20 @@ footer {
         'ocBlurb'
         ;
     }
-
+    .flexContainer {
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .flexContainer div {
+        max-width: 100%;
+        margin: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #myuxSkills {    
+        margin: auto;
+    }
     .workGrid p {
         max-width: 100%;
     }
