@@ -21,7 +21,6 @@ body {
 p {
     color:rgb(19, 20, 20);
 }
-
 h1 {
     font-family: 'Ibarra Real Nova';
     font-style: normal;
@@ -32,7 +31,6 @@ h1 {
     margin: 0%;
     padding-bottom: 20px;
 }
-
 .greeting {
     font-family: 'Splash', cursive;
     font-style: normal;
@@ -40,17 +38,14 @@ h1 {
     font-size: 70px;    
     line-height: 20px;
 }
-
 span {
     opacity: 0;
     transition: all 0.4s ease;
 }
-
 span.fade {
     opacity: 1;
     color: #8E3179;
 }
-
 h2 {
     font-family: 'Splash', cursive;
     font-style: normal;
@@ -58,7 +53,6 @@ h2 {
     font-size: 40px;
     color: #404040;
 }
-
 h3 {
     font-family: Lexend;
     font-size: 25px;
@@ -67,8 +61,6 @@ h3 {
     letter-spacing: 1.25px;
     color: #404040;
 }
-
-
 button {
     font-family: Lexend;
     font-size: 20px;
@@ -87,33 +79,26 @@ button {
 button:hover {
     background-color: #8E3179;
   }
-
 header {
     background-image: linear-gradient(to right, #bd0e88, #1E2761);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }   
-
-
 .inline-block {
     display: inline-block;
     vertical-align: top;
 }
-
 .logo {
     width: 10%;
     padding: 1%;
     text-align: center;
 }
-
 nav {
     width:80%;
     padding: 1%;
 }
 
 header ul {
-    /* width: 20%; */
     min-width: 500px;
-    /* margin-left: 50%; */
     display: flex;
     justify-content: right;
 }
@@ -218,10 +203,6 @@ header ul {
     display: grid;
     padding: auto;
 }
-/* .myWork h1 {
-    margin-left: 150px;
-    color: #1E2761;
-} */
 #viewAllProjects {
 
     text-align: center;
@@ -340,19 +321,19 @@ a.btn:hover {
 }
 nav a {
         color:aliceblue;
-    }
+}
     /* Change the color of links on hover */
 nav a:hover {
         color: #e328b7;
-    }   
+}   
     /* Add an active class to highlight the current page */
 nav a.active {
         background-color: #04AA6D;
         color:aliceblue;
-    }
+}
 nav .icon {
         display: none;
-      }
+}
  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 .userReaserchSkill {
     color: #1E2761;
@@ -363,9 +344,6 @@ nav .icon {
 .webDevelopSkill {
     color: #1E2761;
 }
-/* .inline-block {
-        width: 400px;
-    } */
 footer ul {
     display: flex;
     flex-direction: column;
@@ -383,7 +361,7 @@ footer ul {
 footer li {
     padding-top: 3px;
     padding-bottom: 3px;
-    }
+}
 footer {
     background-image: linear-gradient(to right, #bd0e88, #1E2761);
     padding: 2%;
