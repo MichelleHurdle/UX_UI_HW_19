@@ -112,7 +112,7 @@ nav {
 
 header ul {
     /* width: 20%; */
-    min-width: 800px;
+    min-width: 500px;
     /* margin-left: 50%; */
     display: flex;
     justify-content: right;
@@ -350,7 +350,7 @@ nav a.active {
         background-color: #04AA6D;
         color:aliceblue;
     }
-a .icon {
+nav .icon {
         display: none;
       }
  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -394,12 +394,12 @@ footer {
 /* Media Query Section */
 @media only screen and (max-width: 800px) {
     .navigation a:not(:first-child) {display: none;}
-    .navigation a.icon {
+    .navigation .icon {
         float: right;
         display: block; 
     }
     .navigation.responsive {position: relative;}
-    .navigation.responsive a.icon {
+    .navigation.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
